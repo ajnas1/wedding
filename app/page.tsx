@@ -173,7 +173,7 @@ export default function WeddingInvitation() {
       <div className="scroll-progress" ref={progressRef} />
       <div className="topline" />
       <header className="site-header">
-        <a href="#home" className="brand" aria-label="Wedding home"><span className="brand-mark">❋</span><span>{WEDDING.groom} <i>&</i> {WEDDING.bride}</span></a>
+        <a href="#home" className="brand" aria-label="Wedding home"><span className="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(0 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(45 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(90 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(135 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(180 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(225 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(270 12 12)" /><ellipse cx="12" cy="6" rx="2.2" ry="4.2" transform="rotate(315 12 12)" /></svg></span><span>{WEDDING.groom} <i>&</i> {WEDDING.bride}</span></a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">{menuOpen ? <X /> : <Menu />}</button>
         <nav className={menuOpen ? "nav-links nav-open" : "nav-links"}>
           {[["Our Invitation", "#invitation"], ["The Celebration", "#celebration"], ["Venue", "#venue"], ["Gallery", "#gallery"], ["Send Wishes", "#wishes"]].map(([label, href]) => (
@@ -202,7 +202,7 @@ export default function WeddingInvitation() {
           </button>
           <p className="hero-blessing">A new beginning, blessed by tradition and love</p>
         </div>
-        <div className="hero-bottom"><span>WITH LOVE & BLESSINGS</span><span className="bottom-flower">✳</span><span>KERALA · INDIA</span></div>
+        <div className="hero-bottom"><span>WITH LOVE & BLESSINGS</span><span className="bottom-flower"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19" /></svg></span><span>KERALA · INDIA</span></div>
       </section>
 
       <section id="invitation" className="invitation section-pad">
